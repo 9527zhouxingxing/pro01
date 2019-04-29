@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--<bean id="ItestImp" class="tt.t.service.Imp.ItestImpl"></bean>-->
+  <!--  <bean id="Test02" class="tt.t.service.Imp.Test02">
+        <constructor-arg name="name" value="张三丰"></constructor-arg>
+    </bean>
+    <bean id="haha" factory-bean="Test02" factory-method="haha">
+        <constructor-arg name="name" value="zhangsanfeng"></constructor-arg>
+    </bean>-->
+  <!--  <bean id="now" class="java.util.Date"></bean>
+    <bean id="Test03" class="tt.t.service.Imp.Test03">
+        <property name="name" value="倪大爷"></property>
+        <property name="date" ref="now"></property>
+    </bean>-->
+
+
+    <bean id="Test04" class="tt.t.service.Imp.Test04">
+        <property name="myArr">
+            <array>
+                <value>aaa</value>
+                <value>bbb</value>
+                <value>ccc</value>
+            </array>
+        </property>
+        <property name="myList">
+            <list>
+                <value>AAA</value>
+                <value>BBB</value>
+                <value>CCC</value>
+            </list>
+        </property>
+
+        <property name="mySet">
+            <set>
+                <value>WWW</value>
+                <value>XXX</value>
+                <value>YYY</value>
+            </set>
+        </property>
+    </bean>
+</beans>
